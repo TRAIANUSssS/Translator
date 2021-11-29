@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main.css">
+    <title>Document</title>
+</head>
+<body style = ''>
+    <h1 style="text-align: center;">Nice to meet to you at my Translator!</h1>
+
+    <form style="display: flex; align-items: center; flex-direction: column;" action="" method="post">
+        <p style = 'padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+	    <label style = 'padding-right: 20px; padding-bottom: 20px;'for="lang">Set your last-translating language</label>
+	    <input style = 'outline:none; height: 40px; weight: 100px; border-radius: 4px;' class = 'bg-dark text-white' type="text" name="lang">
+	</p>
+    </form>
+
+    <form style="display: flex; flex-direction: column;" action="" method="post">
+        <p style = 'padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+	    <label style = 'padding-right: 20px;  padding-bottom: 20px;'for="trans">Enter your text: </label>
+	    <input style = 'outline:none; height: 40px; weight: 100px; border-radius: 4px;' class = 'bg-dark text-white' type="text" name="trans">
+	</p>
+	<p style="width: 100%; display: flex; justify-content: center;">
+	    <input style="" class = 'sub' style = 'font-family: Arial; margin: 0 100px;' class = "btn btn-primary bg-light text-dark" type="submit">
+	</p>
+    </form>
+    <br>
+    <br>
+    <br>
+    <h3>Output label:</h3>
+    <p>{{my_string}}</p>
+    <p>{{lang}}</p>
+    <section>
+    <label class="select-label">Выберите язык на который нужно перевести:</label>
+    <select class="cs-select cs-skin-rotate">
+        <option value="1">Russian</option>
+        <option value="2">English</option>
+        <option value="3">Spanish</option>
+        <option value="4">French</option>
+        <option value="5">German</option>
+    </select>
+    </section><br>
+    <br>
+
+</body>
+</html>
