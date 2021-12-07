@@ -7,33 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../static/bootstrap.min.css">
     <link rel="stylesheet" href="/static/main.css">
-    <title>Document</title>
+    <title>My translator</title>
 </head>
-<body style = ''>
+<body style = 'padding: 230px'>
     <h1 style="text-align: center;">This is my translator</h1>
-    <div class="row">
-        <form style="display: flex; flex-direction: column;" action="" method="post">
-            <p style = 'padding: 20px; display: flex; align-items: center; flex-direction: column;'>
-                <label style = 'padding-right: 20px;  padding-bottom: 20px;' for = 'trans'>Enter your text: </label>
-                <input style = 'outline:none; height: 40px; weight: 100px; border-radius: 4px;' class = 'bg-dark text-white' type="text" name="trans">
+    <div style="display: flex; flex-direction: column;">
+        <form style="display: flex; flex-direction: column; align-items: center;" action="" method="post">
+            <p style = 'padding: 20px; display: flex; flex-direction: column; align-items: center;'>
+                <label style = 'padding-right: 20px; ' for = 'trans'>Enter your text: </label>
+                <input style = 'outline:none; height: 50px; width: 1000px; border-radius: 4px; align="center";' type="text" name="trans">
             </p>
 
-            <section>
+            <section style="display: flex; flex-direction: column;align-items: center; padding-bottom: 20px;">
                 <label for = 'lang'>Выберите язык на который нужно перевести:</label>
                 <select name="lang">
-                    <option value="1">Russian</option>
-                    <option value="2">English</option>
-                    <option value="3">Spanish</option>
-                    <option value="4">French</option>
-                    <option value="5">German</option>
+                    <option value="ru">Russian</option>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
                 </select>
             </section>
-            <input style="" class = 'sub' style = 'font-family: Arial; margin: 0 100px;' class = "btn btn-primary bg-light text-dark" type="submit">
+            <input style = 'display: flex; flex-direction: column; align-items: center; font-family: Arial; margin: 0 100px;width: 10%; ' type="submit">
         </form>
         <br>
-        <p>{{my_string}}</p>
+        <p style="display: flex; flex-direction: column; align-items: center;padding: 20px;">{{my_string}}</p>
     </div>
-
-
 </body>
 </html>
